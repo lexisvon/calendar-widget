@@ -1,0 +1,10 @@
+$txt-algn: center;
+
+
+h1 { 
+ 	text-align: $txt-algn;
+  	font-size: 1.8rem;
+}
+.weekday {
+	text-align: $txt-algn;
+}

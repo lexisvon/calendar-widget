@@ -1,0 +1,23 @@
+$yellow-bg: #e6dc83;
+$yellow-text: #fcee6d;
+$dk-blue: #29323f;
+$white: #fff;
+$grey: #999;
+
+
+body {
+	background-color: $yellow-bg;
+	.calendar{
+		background-color: $dk-blue;
+		color: $white;
+		h1{
+			color: $yellow-text;
+		}
+		.weekday {
+			color: $grey;
+		}
+		label.day:hover {
+			border-color: #e7d84f;
+		}
+	}
+}
