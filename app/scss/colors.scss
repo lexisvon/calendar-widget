@@ -16,8 +16,23 @@ body {
 		.weekday {
 			color: $grey;
 		}
-		label.day:hover {
+		span:hover {
 			border-color: #e7d84f;
+		}
+		em {
+			border-color: $yellow-text;
+			background-color: $yellow-text;
+		}
+		input.appointment {
+			color: $white;
+		}
+		input.appointment:focus {
+			color: $dk-blue;
+		}
+		input.appointment:focus + span {
+			border-color: $yellow-text;
+			background: $yellow-text;
+			color: $dk-blue;
 		}
 	}
 }

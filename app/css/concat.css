@@ -7,8 +7,19 @@ body {
       color: #fcee6d; }
     body .calendar .weekday {
       color: #999; }
-    body .calendar label.day:hover {
+    body .calendar span:hover {
       border-color: #e7d84f; }
+    body .calendar em {
+      border-color: #fcee6d;
+      background-color: #fcee6d; }
+    body .calendar input.appointment {
+      color: #fff; }
+    body .calendar input.appointment:focus {
+      color: #29323f; }
+    body .calendar input.appointment:focus + span {
+      border-color: #fcee6d;
+      background: #fcee6d;
+      color: #29323f; }
 
 html * {
   padding: 0;
@@ -36,41 +47,30 @@ body .calendar {
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start; }
-    body .calendar form .weekday {
-      display: inline-block;
+    body .calendar form .weekday, body .calendar form .day {
       width: 25px;
-      margin: 8px;
-      text-align: center; }
+      margin: 8px; }
     body .calendar form .none {
-      display: inline-block;
       opacity: 0;
       width: 25px;
       height: 29px;
       margin: 8px; }
-    body .calendar form .day {
-      display: inline-block;
-      width: 25px;
-      margin: 8px; }
     body .calendar form span {
       display: block;
-      width: 25px;
-      height: 25px;
-      line-height: 25px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
       border-radius: 50%;
       border: 2px solid #29323f;
       text-align: center;
       cursor: pointer; }
-    body .calendar form span:hover {
-      border-color: #e7d84f; }
     body .calendar form em {
       display: inline-block;
       position: absolute;
       border-radius: 50%;
-      border-color: #fcee6d;
       width: 3px;
       height: 3px;
-      background-color: #fcee6d;
-      margin-left: 13px;
+      margin-left: 14px;
       margin-top: 2px;
       opacity: 0; }
     body .calendar form input.appointment {
@@ -79,23 +79,15 @@ body .calendar {
       position: absolute;
       margin-top: 40px;
       left: -45px;
-      width: 380px;
-      height: 1px;
-      padding: 0;
-      outline: none;
-      font-size: 16px;
-      color: #fff; }
+      width: 400px;
+      outline: none; }
     body .calendar form input.appointment:focus {
       opacity: 1;
       height: 35px;
-      padding: 10px 40px;
+      padding: 30px 40px;
       left: -45px;
-      width: 300px;
-      color: #29323f; }
+      width: 400px; }
     body .calendar form input.appointment:focus + span {
-      border-color: #fcee6d;
-      background: #fcee6d;
-      color: #29323f;
       font-weight: bold;
       margin-bottom: 65px; }
     body .calendar form input.appointment:valid ~ em {
